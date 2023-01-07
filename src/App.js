@@ -49,7 +49,7 @@ function App() {
         <div className='bottom'>
           <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p>: null}
-            <p>Clouds<p>
+            <p>Clouds</p>
           </div>
           <div className="humidity">
             {data.main ? <p className='bold'>{data.main.humidity}%</p>: null}
