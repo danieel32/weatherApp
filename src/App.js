@@ -7,10 +7,6 @@ function App() {
   
   const url=`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=0ec4fae43a43ee84207d55ffc8d43550`
   
-  var iconcode = data.weather[0].icon;
-  
-  var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
-  
   const searchLocation = (event)=> {
     if (event.key ==='Enter') {
       axios.get(url).then((response) => {
@@ -47,7 +43,13 @@ function App() {
         <div className='bottom'>
           <div className="description">
             <div id="icon">
-              <img id="wicon" src=" $('#wicon').attr('src', iconurl);" alt="Weather icon"/>
+               <div>
+                 <img 
+                    id="wicon" 
+                    src={`http://openweathermap.org/img/wn/${a.weather[0].icon}@2x.png`}
+                    alt="weather icon">
+                  </img>
+               </div>
              </div>
             {data.weather ? <p>{data.weather[0].main}</p>: null}
           <p>Clouds</p>
