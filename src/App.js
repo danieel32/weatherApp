@@ -46,7 +46,7 @@ function App() {
                   </img>
                </div>
              </div>
-            {data.weather ? <p>{data.weather[0].icon}</p>: null}
+            {data.weather ? <p>{data.weather[0].main}</p>: null}
           </div>
         </div>
         <div className='bottom'>
