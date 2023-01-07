@@ -16,6 +16,8 @@ function App() {
       setLocation('')
     }
   }
+  
+  const sunrise = new Date((data.sys.sunrise + data.timezone) * 1000)
 
   return (
     <div className="app">
@@ -37,6 +39,9 @@ function App() {
           </div>
           <div className="time">
             <p>{data.timezone}</p>
+          </div>
+          <div className="sunrise">
+            <p>{sunrise}</p>
           </div>
         </div>
         {data.name != undefined &&
