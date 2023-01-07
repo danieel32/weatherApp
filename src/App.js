@@ -36,7 +36,7 @@ function App() {
             {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
           </div>
           <div className="time">
-            <p>{data.timezone}<p>
+            <p>{data.timezone}</p>
           </div>
         </div>
         {data.name != undefined &&
