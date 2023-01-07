@@ -37,12 +37,12 @@ function App() {
           </div>
           <div className="time">
             <div>
-                 <img 
-                    id="wicon" 
-                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
-                    alt="weather icon">
-                  </img>
-               </div>
+               <img 
+                  id="wicon" 
+                  src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+                  alt="weather icon">
+               </img>
+            </div>
           </div>
         </div>
         {data.name != undefined &&
