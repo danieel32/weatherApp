@@ -36,6 +36,15 @@ function App() {
             {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
           </div>
           <div className="time">
+            <div id="icon">
+               <div>
+                 <img 
+                    id="wicon" 
+                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+                    alt="weather icon">
+                  </img>
+               </div>
+             </div>
             {data.weather ? <p>{data.weather[0].icon}</p>: null}
           </div>
         </div>
