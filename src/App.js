@@ -49,7 +49,6 @@ function App() {
             {data.weather ? <p>{data.weather[0].icon}</p>: null}
           </div>
         </div>
-        
         <div className='bottom'>
           <div className="description">
             <div id="icon">
