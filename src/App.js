@@ -41,7 +41,11 @@ function App() {
         </div>
         {data.name != undefined &&
         <div className='bottom'>
-          <div className="description">
+          <div className="humidity">
+            {data.main ? <p className='bold'>{data.main.humidity}%</p>: null}
+            <p>humidity</p>
+          </div>
+         <div className="description">
             <div id="icon">
                <div>
                  <img 
@@ -52,10 +56,6 @@ function App() {
                </div>
              </div>
              {data.weather ? <p>{data.weather[0].main}</p>: null}
-          </div>
-          <div className="humidity">
-            {data.main ? <p className='bold'>{data.main.humidity}%</p>: null}
-            <p>humidity</p>
           </div>
         <div className="wind">
           {data.main ? <p className='bold'>{data.wind.speed.toFixed()}MPH</p>: null}
