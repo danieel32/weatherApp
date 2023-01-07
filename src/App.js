@@ -7,7 +7,7 @@ function App() {
   
   const url=`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=0ec4fae43a43ee84207d55ffc8d43550`
   
-  var iconcode = .weather[0].icon;
+  var iconcode = weather[0].icon;
   
   var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
   
