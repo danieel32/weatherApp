@@ -35,7 +35,7 @@ function App() {
           <div className="temp">
             {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
           </div>
-          {data.name != undefined &&
+      {data.name != undefined &&
           <div className="time">
             <div id="icon">
                <div>
