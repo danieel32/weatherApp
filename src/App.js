@@ -47,7 +47,7 @@ function App() {
         <div className='bottom'>
           <div className="description">
             <div id="icon">
-              <img id="wicon" src=" $('#wicon').attr('src', iconurl);" alt="Weather icon">
+              <img id="wicon" src=" $('#wicon').attr('src', iconurl);" alt="Weather icon"/>
              </div>
             {data.weather ? <p>{data.weather[0].main}</p>: null}
           <p>Clouds</p>
