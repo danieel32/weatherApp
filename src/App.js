@@ -36,7 +36,6 @@ function App() {
             {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
           </div>
           <div className="description">
-            <div id="icon">
                <div>
                  <img 
                     id="wicon" 
@@ -44,9 +43,7 @@ function App() {
                     alt="weather icon">
                   </img>
                </div>
-             </div>
             {data.weather ? <p>{data.weather[0].main}</p>: null}
-          <p>Clouds</p>
           </div>
         </div>
         {data.name != undefined &&
