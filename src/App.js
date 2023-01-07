@@ -45,6 +45,7 @@ function App() {
                   </img>
               </div>
             </div>
+            {data.weather ? <p>{data.weather[0].icon}</p>: null}
           </div>
         </div>
         {data.name != undefined &&
