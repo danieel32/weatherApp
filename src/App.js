@@ -35,11 +35,6 @@ function App() {
           <div className="temp">
             {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
           </div>
-          <div className="time">
-          </div>
-        </div>
-        {data.name != undefined &&
-        <div className='bottom'>
           <div className="description">
             <div id="icon">
                <div>
@@ -53,6 +48,9 @@ function App() {
             {data.weather ? <p>{data.weather[0].main}</p>: null}
           <p>Clouds</p>
           </div>
+        </div>
+        {data.name != undefined &&
+        <div className='bottom'>
           <div className="humidity">
             {data.main ? <p className='bold'>{data.main.humidity}%</p>: null}
             <p>humidity</p>
