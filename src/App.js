@@ -46,7 +46,7 @@ function App() {
                <div>
                  <img 
                     id="wicon" 
-                    src={`http://openweathermap.org/img/wn/${a.weather[0].icon}@2x.png`}
+                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
                     alt="weather icon">
                   </img>
                </div>
