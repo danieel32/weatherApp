@@ -51,15 +51,6 @@ function App() {
         {data.name != undefined &&
         <div className='bottom'>
           <div className="description">
-            <div id="icon">
-               <div>
-                 <img 
-                    id="wicon" 
-                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
-                    alt="weather icon">
-                  </img>
-               </div>
-             </div>
             {data.weather ? <p>{data.weather[0].main}</p>: null}
           <p>Clouds</p>
           </div>
