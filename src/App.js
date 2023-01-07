@@ -38,9 +38,6 @@ function App() {
           <div className="time">
             <p>{data.timezone}</p>
           </div>
-          <div className="sunrise">
-            <p>{sunrise}</p>
-          </div>
         </div>
         {data.name != undefined &&
         <div className='bottom'>
