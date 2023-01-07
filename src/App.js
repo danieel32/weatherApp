@@ -38,6 +38,9 @@ function App() {
           <div className="time">
             {data.weather ? <p>{data.weather[0].icon}</p>: null}
           </div>
+        </div>
+        {data.name != undefined &&
+        <div className='bottom'>
           <div className="description">
             <div id="icon">
                <div>
@@ -48,11 +51,6 @@ function App() {
                   </img>
                </div>
              </div>
-          </div>
-        </div>
-        {data.name != undefined &&
-        <div className='bottom'>
-          <div className="description">
             {data.weather ? <p>{data.weather[0].main}</p>: null}
           <p>Clouds</p>
           </div>
