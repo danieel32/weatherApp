@@ -28,6 +28,7 @@ h1 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   color: floralwhite;
+  display: block;
 }
 
 .app:before{
@@ -42,8 +43,8 @@ h1 {
 }
 
 .container {
-  max-width: 700px;
-  height: 700px;
+  max-width: 500px;
+  height: 500px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
