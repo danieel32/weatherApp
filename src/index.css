@@ -28,7 +28,6 @@ h1 {
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
   color: floralwhite;
-  display: block;
 }
 
 .app:before{
