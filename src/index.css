@@ -48,6 +48,7 @@ h1 {
   margin: auto;
   padding: 0 1rem;
   position: relative;
+  display: flex;
   top: 10%;
   flex-direction: column;
   justify-content: space-between;
