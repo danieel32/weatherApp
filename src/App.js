@@ -40,7 +40,7 @@ function App() {
         <div className='bottom'>
           <div className="humidity">
             {data.main ? <p className='bold'>{data.main.humidity}%</p>: null}
-            <p>humidity</p>
+            <p>Humidity</p>
           </div>
          <div className="description">
             <div id="icon">
@@ -55,7 +55,7 @@ function App() {
           </div>
         <div className="wind">
           {data.main ? <p className='bold'>{data.wind.speed.toFixed()}MPH</p>: null}
-          <p>wind</p>
+          <p>Wind</p>
         </div>
         </div>
         }
