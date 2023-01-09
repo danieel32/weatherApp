@@ -33,10 +33,7 @@ function App() {
             <p>{data.name}</p>
           </div>
           <div className="temp">
-            {data.main ?<h1>{data.main.temp.toFixed()}F</h1>: null}
-          </div>
-          <div className="time">
-            {data.weather ? <p>{data.weather[0].main}</p>: null}
+            {data.main ?<h1>{data.main.temp.toFixed()}°F</h1>: null}
           </div>
         </div>
         {data.name != undefined &&
