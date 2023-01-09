@@ -87,8 +87,8 @@ h1 {
   background-color: rgb(239, 219, 153,0.5);
 }
 
-.description {
-  padding
+.app .bottom .description {
+  padding: 70px;
 }
 
 .bold{
